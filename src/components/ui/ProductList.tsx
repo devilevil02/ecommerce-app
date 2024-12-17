@@ -19,6 +19,7 @@ const ProductList = () => {
   const { data: products } = useQuery({
     queryKey: ["product_preview"],
     queryFn: fetchProdPreview,
+    // @ts-ignore
     suspense: true,
   });
 
